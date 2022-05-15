@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Alarm Manager</string>
+    <string name="notify_sleep_diary_title">زمان ثبت خاطرات خواب</string>
+    <string name="notify_sleep_diary_message">روز قبلش چطور بود؟ آن را در دفتر خاطرات خواب خود یادداشت کنید.</string>
+    <string name="notify_morning_title">روز قبل چطور بود؟ آن را در دفتر خاطرات خواب خود یادداشت کنید.</string>
+    <string name="notify_morning_message">زمان توصیه شده نور صبح. صبح خود را با اولی شروع کنید.</string>
+    <string name="notify_evening_title">عصر با اولی استراحت کنید.</string>
+    <string name="notify_evening_message">زمان توصیه شده نور عصر.</string>
+    <string name="notify_sleep_title">به آرامی با اولی قبل از خواب.</string>
+    <string name="notify_sleep_message">این زمان توصیه شده برای بدهی خواب است. لطفا قبل از رفتن به رختخواب فقط از چراغ خواب اولی استفاده کنید.</string>
+    <string name="notify_miss_diary_title">آیا فراموش کرده اید که یک دفترچه خاطرات خواب داشته باشید؟</string>
+    <string name="notify_miss_diary_message">امروز دفتر خاطرات خواب نداشتم. لطفا همین الان بنویس</string>
 </resources>
