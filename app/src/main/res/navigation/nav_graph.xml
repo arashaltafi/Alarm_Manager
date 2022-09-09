@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/reminder_graph"
+    app:startDestination="@id/reminderFragment">
+
+    <fragment
+        android:id="@+id/reminderFragment"
+        android:name="com.arash.altafi.alarmmanager.sample0.ui.ReminderFragment"
+        android:label="reminders"
+        tools:layout="@layout/fragment_reminder">
+        <argument
+            android:name="id"
+            android:defaultValue=""
+            app:argType="string" />
+        <argument
+            android:name="datetime"
+            android:defaultValue="-1L"
+            app:argType="long" />
+        <argument
+            android:name="title"
+            android:defaultValue=""
+            app:argType="string" />
+        <argument
+            android:name="type"
+            android:defaultValue=""
+            app:argType="string" />
+        <argument
+            android:name="items"
+            android:defaultValue=""
+            app:argType="string" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/confirmDialogFragment"
+        android:name="com.arash.altafi.alarmmanager.sample0.ui.ConfirmDialogFragment"
+        android:label="confirmDialogFragment"
+        tools:layout="@layout/dialog_confirm">
+        <argument
+            android:name="message"
+            android:defaultValue="null"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="dataAny"
+            android:defaultValue="null" />
+    </dialog>
+
+    <dialog
+        android:id="@+id/reminderAddManuallyDialog"
+        android:name="com.arash.altafi.alarmmanager.sample0.ui.ReminderAddManuallyDialog"
+        android:label="ReminderAddManually"
+        tools:layout="@layout/dialog_alarm_add_manually">
+        <argument
+            android:name="isEdit"
+            app:argType="boolean" />
+        <argument
+            android:name="datetime"
+            app:argType="long" />
+        <argument
+            android:name="title"
+            app:argType="string" />
+        <argument
+            android:name="uniqueId"
+            app:argType="string" />
+    </dialog>
+
+</navigation>

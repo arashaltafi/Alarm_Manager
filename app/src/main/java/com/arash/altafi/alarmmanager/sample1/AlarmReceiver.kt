@@ -61,10 +61,11 @@ class AlarmReceiver : BroadcastReceiver() {
 
         val contentIntent = Intent(context, AlarmManagerActivity1::class.java)
         val contentPendingIntent = PendingIntent.getActivity(
-            context,
-            NOTIFICATION_ID,
-            contentIntent,
-            PendingIntent.FLAG_IMMUTABLE
+            context, NOTIFICATION_ID, contentIntent,
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M)
+                PendingIntent.FLAG_IMMUTABLE else 0x0
+                    or
+                    PendingIntent.FLAG_UPDATE_CURRENT
         )
         val builder = NotificationCompat.Builder(context, PRIMARY_CHANNEL_ID)
             .setSmallIcon(R.drawable.ic_launcher_foreground)

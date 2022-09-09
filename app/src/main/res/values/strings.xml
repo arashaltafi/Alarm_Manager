@@ -10,4 +10,31 @@
     <string name="notify_sleep_message">این زمان توصیه شده برای بدهی خواب است. لطفا قبل از رفتن به رختخواب فقط از چراغ خواب اولی استفاده کنید.</string>
     <string name="notify_miss_diary_title">آیا فراموش کرده اید که یک دفترچه خاطرات خواب داشته باشید؟</string>
     <string name="notify_miss_diary_message">امروز دفتر خاطرات خواب نداشتم. لطفا همین الان بنویس</string>
+
+    <string name="str_reminder_time_format">%s %s %s در ساعت %s</string>
+    <string name="delete_all_reminder_confirm">آیا از حذف همه یادآوری ها اطمینان دارید؟</string>
+    <string name="reminder_do_remove">%s حذف شود؟</string>
+    <string name="not_reminder_to_delete">یادآوری برای حذف یافت نشد.</string>
+    <string name="remove">حذف</string>
+    <string name="edit">ویرایش</string>
+    <string name="delete_all">حذف همه</string>
+    <string name="date">تاریخ</string>
+    <string name="apply">اعمال</string>
+    <string name="do_set">ثبت کن</string>
+    <string name="notification_details">جزئیات اعلان</string>
+    <string name="add_new_reminder">درج یادآوری جدید</string>
+    <string name="edit_reminder">ویرایش یادآوری</string>
+    <string name="title">عنوان</string>
+    <string name="date_and_time">تاریخ و ساعت</string>
+    <string name="time">ساعت</string>
+    <string name="please_enter_title">لطفا عنوان را وارد کنید</string>
+    <string name="set_time_error_past">امکان تنظیم یادآور برای زمان گذشته وجود ندارد</string>
+    <string name="are_you_sure">آیا مطمئن هستید؟</string>
+    <string name="permission_nedded_message">بدون تایید مجوز ها امکان فعال سازی این قابلیت وجود ندارد.</string>
+    <string name="select_date">انتخاب تاریخ</string>
+    <string name="reminder_body">برای تاریخ %s تنظیم شود.</string>
+    <string name="reminder_set_message">یادآور برای تاریخ %s تنظیم شد.</string>
+    <string name="reminder_edit_message">یادآور برای تاریخ %s ویرایش شد.</string>
+    <string name="reminder_">یادآوری ها</string>
+    <string name="reminder_app_notifications">اعلان یادآوری های اپلیکیشن</string>
 </resources>

@@ -6,6 +6,7 @@ import android.app.Dialog
 import android.app.PendingIntent
 import android.app.TimePickerDialog
 import android.content.Intent
+import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
@@ -54,10 +55,11 @@ class AlarmManagerActivity3 : AppCompatActivity() {
         val intent = Intent(this, AlarmReceiver::class.java)
         //intent.putExtra("des",Description);
         val pendingIntent = PendingIntent.getBroadcast(
-            this,
-            0,
-            intent,
-            PendingIntent.FLAG_IMMUTABLE
+            this, 0, intent,
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M)
+                PendingIntent.FLAG_IMMUTABLE else 0x0
+                    or
+                    PendingIntent.FLAG_UPDATE_CURRENT
         )
         am.setInexactRepeating(
             AlarmManager.RTC_WAKEUP, calendar!!.timeInMillis, AlarmManager.INTERVAL_DAY,

@@ -13,4 +13,49 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <!--    card view-->
+    <style name="card.round" parent="Widget.MaterialComponents.CardView">
+        <item name="cardCornerRadius">12dp</item>
+    </style>
+
+    <style name="btn.colored" parent="Widget.MaterialComponents.Button">
+        <item name="fontWeight">700</item>
+        <item name="android:layout_height">55dp</item>
+        <item name="shapeAppearance">@style/appearance.round.35</item>
+    </style>
+
+    <style name="animation.popup_window" parent="">
+        <item name="android:windowEnterAnimation">@anim/popup_in</item>
+        <item name="android:windowExitAnimation">@anim/popup_out</item>
+    </style>
+
+    <!--    bottom sheet-->
+
+    <style name="appearance.top.round.card" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">24dp</item>
+        <item name="cornerSizeTopLeft">24dp</item>
+    </style>
+
+    <style name="bottom.sheet.style" parent="Widget.MaterialComponents.BottomSheet.Modal">
+        <item name="shapeAppearanceOverlay">@style/appearance.top.round.card</item>
+        <item name="behavior_skipCollapsed">true</item>
+        <item name="behavior_fitToContents">true</item>
+        <item name="behavior_peekHeight">1000dp</item>
+        <item name="behavior_hideable">true</item>
+        <item name="backgroundTint">?android:colorBackground</item>
+    </style>
+
+    <style name="app.theme.sheet" parent="Theme.AlarmManager">
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.3</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowAnimationStyle">
+            @style/Animation.MaterialComponents.BottomSheetDialog
+        </item>
+
+        <item name="bottomSheetStyle">@style/bottom.sheet.style</item>
+    </style>
+
 </resources>

@@ -23,9 +23,12 @@ class AlarmReceiver : BroadcastReceiver() {
         sharedPrefs = SharedPrefs(context)
         nm = context.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
         val myNew = Intent(context, AlarmManagerActivity3::class.java)
-        pendingIntent = PendingIntent.getActivity(
+        pendingIntent = PendingIntent.getBroadcast(
             context, 0, myNew,
-            PendingIntent.FLAG_IMMUTABLE
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M)
+                PendingIntent.FLAG_IMMUTABLE else 0x0
+                    or
+                    PendingIntent.FLAG_UPDATE_CURRENT
         )
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             if (!sharedPrefs!!.getNotification()) {

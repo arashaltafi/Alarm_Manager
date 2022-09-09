@@ -11,22 +11,30 @@
     tools:context=".MainActivity">
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_alarm_manager_0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Alarm manager 0" />
+
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_alarm_manager_1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
         android:text="Alarm manager 1" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_alarm_manager_2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginVertical="30dp"
+        android:layout_marginTop="30dp"
         android:text="Alarm manager 2" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_alarm_manager_3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
         android:text="Alarm manager 3" />
 
 </androidx.appcompat.widget.LinearLayoutCompat>

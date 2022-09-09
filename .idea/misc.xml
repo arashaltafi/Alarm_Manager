@@ -7,6 +7,30 @@
         <entry key="..\:/Users/Arash/Desktop/1/AlarmManager/app/src/main/res/layout/activity_alarm_manager2.xml" value="0.28425925925925927" />
         <entry key="..\:/Users/Arash/Desktop/1/AlarmManager/app/src/main/res/layout/activity_alarm_manager3.xml" value="0.15462962962962962" />
         <entry key="..\:/Users/Arash/Desktop/1/AlarmManager/app/src/main/res/layout/activity_main.xml" value="0.28425925925925927" />
+        <entry key="..\:/Users/Arash/Desktop/source-android/GIT/AlarmManager/app/src/main/res/drawable/bg_alert_error.xml" value="0.205" />
+        <entry key="..\:/Users/Arash/Desktop/source-android/GIT/AlarmManager/app/src/main/res/drawable/bg_alert_info.xml" value="0.205" />
+        <entry key="..\:/Users/Arash/Desktop/source-android/GIT/AlarmManager/app/src/main/res/drawable/bg_alert_success.xml" value="0.205" />
+        <entry key="..\:/Users/Arash/Desktop/source-android/GIT/AlarmManager/app/src/main/res/drawable/ic_add.xml" value="0.205" />
+        <entry key="..\:/Users/Arash/Desktop/source-android/GIT/AlarmManager/app/src/main/res/drawable/ic_barbershop_date.xml" value="0.205" />
+        <entry key="..\:/Users/Arash/Desktop/source-android/GIT/AlarmManager/app/src/main/res/drawable/ic_baseline_more_vert_24.xml" value="0.205" />
+        <entry key="..\:/Users/Arash/Desktop/source-android/GIT/AlarmManager/app/src/main/res/drawable/ic_delete_red.xml" value="0.205" />
+        <entry key="..\:/Users/Arash/Desktop/source-android/GIT/AlarmManager/app/src/main/res/drawable/ic_edit.xml" value="0.205" />
+        <entry key="..\:/Users/Arash/Desktop/source-android/GIT/AlarmManager/app/src/main/res/drawable/ic_error.xml" value="0.205" />
+        <entry key="..\:/Users/Arash/Desktop/source-android/GIT/AlarmManager/app/src/main/res/drawable/ic_info.xml" value="0.205" />
+        <entry key="..\:/Users/Arash/Desktop/source-android/GIT/AlarmManager/app/src/main/res/drawable/ic_reminder.xml" value="0.1925" />
+        <entry key="..\:/Users/Arash/Desktop/source-android/GIT/AlarmManager/app/src/main/res/drawable/ic_reminder_time.xml" value="0.205" />
+        <entry key="..\:/Users/Arash/Desktop/source-android/GIT/AlarmManager/app/src/main/res/drawable/ic_success.xml" value="0.205" />
+        <entry key="..\:/Users/Arash/Desktop/source-android/GIT/AlarmManager/app/src/main/res/drawable/ic_tick_double.xml" value="0.205" />
+        <entry key="..\:/Users/Arash/Desktop/source-android/GIT/AlarmManager/app/src/main/res/drawable/shp_top_indicator.xml" value="0.205" />
+        <entry key="..\:/Users/Arash/Desktop/source-android/GIT/AlarmManager/app/src/main/res/drawable/shp_transparent.xml" value="0.1925" />
+        <entry key="..\:/Users/Arash/Desktop/source-android/GIT/AlarmManager/app/src/main/res/layout/activity_alarm_manager0.xml" value="0.22" />
+        <entry key="..\:/Users/Arash/Desktop/source-android/GIT/AlarmManager/app/src/main/res/layout/activity_main.xml" value="0.371875" />
+        <entry key="..\:/Users/Arash/Desktop/source-android/GIT/AlarmManager/app/src/main/res/layout/dialog_alarm_add_manually.xml" value="0.22" />
+        <entry key="..\:/Users/Arash/Desktop/source-android/GIT/AlarmManager/app/src/main/res/layout/dialog_confirm.xml" value="0.37083333333333335" />
+        <entry key="..\:/Users/Arash/Desktop/source-android/GIT/AlarmManager/app/src/main/res/layout/fragment_reminder.xml" value="0.371875" />
+        <entry key="..\:/Users/Arash/Desktop/source-android/GIT/AlarmManager/app/src/main/res/layout/item_reminder.xml" value="0.371875" />
+        <entry key="..\:/Users/Arash/Desktop/source-android/GIT/AlarmManager/app/src/main/res/layout/layout_dialog_indicator.xml" value="0.37083333333333335" />
+        <entry key="..\:/Users/Arash/Desktop/source-android/GIT/AlarmManager/app/src/main/res/layout/layout_popup_menu.xml" value="0.371875" />
       </map>
     </option>
   </component>

@@ -3,9 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.arash.altafi.alarmmanager">
 
-    <uses-permission android:name="android.permission.WAKE_LOCK"/>
-    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+
     <application
+        android:name=".App"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -15,6 +17,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AlarmManager"
         tools:targetApi="31">
+        <activity
+            android:name=".sample0.ui.AlarmManagerActivity0"
+            android:exported="false" />
         <activity
             android:name=".sample3.AlarmManagerActivity3"
             android:exported="false" />
@@ -34,7 +39,8 @@
             </intent-filter>
         </activity>
 
-        <receiver android:name=".sample1.AlarmReceiver"
+        <receiver
+            android:name=".sample0.repository.ReminderBootReceiver"
             android:enabled="true"
             android:exported="true">
             <intent-filter>
@@ -42,16 +48,34 @@
             </intent-filter>
         </receiver>
 
-        <receiver android:name=".sample2.PollReceiver"
+        <receiver
+            android:name=".sample0.repository.ReminderReceiver"
+            android:enabled="true"
             android:exported="true">
             <intent-filter>
-            <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name=".sample1.AlarmReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".sample2.PollReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
 
         <service
             android:name=".sample2.ScheduledService"
-            android:permission="android.permission.BIND_JOB_SERVICE"/>
+            android:permission="android.permission.BIND_JOB_SERVICE" />
 
         <receiver android:name=".sample3.AlarmReceiver" />
         <receiver
@@ -62,7 +86,6 @@
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
-
     </application>
 
 </manifest>

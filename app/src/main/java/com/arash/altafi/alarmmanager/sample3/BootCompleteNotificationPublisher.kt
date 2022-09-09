@@ -5,6 +5,7 @@ import android.app.PendingIntent
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
+import android.os.Build
 import java.util.*
 
 class BootCompleteNotificationPublisher : BroadcastReceiver() {
@@ -15,8 +16,12 @@ class BootCompleteNotificationPublisher : BroadcastReceiver() {
                 val alarmIntent = Intent(context, AlarmReceiver::class.java)
                 alarmIntent.putExtra("sender2", "horoscope")
                 val pendingIntent = PendingIntent.getBroadcast(
-                    context, 0, alarmIntent,
-                    PendingIntent.FLAG_IMMUTABLE
+                    context,
+                    0, alarmIntent,
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M)
+                        PendingIntent.FLAG_IMMUTABLE else 0x0
+                            or
+                            PendingIntent.FLAG_UPDATE_CURRENT
                 )
                 val manager = context.getSystemService(Context.ALARM_SERVICE) as AlarmManager
 
@@ -41,7 +46,10 @@ class BootCompleteNotificationPublisher : BroadcastReceiver() {
                 val alarmIntent = Intent(context, AlarmReceiver::class.java)
                 val pendingIntent = PendingIntent.getBroadcast(
                     context, 0, alarmIntent,
-                    PendingIntent.FLAG_IMMUTABLE
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M)
+                        PendingIntent.FLAG_IMMUTABLE else 0x0
+                            or
+                            PendingIntent.FLAG_UPDATE_CURRENT
                 )
                 val manager = context.getSystemService(Context.ALARM_SERVICE) as AlarmManager
                 //val date = Date()
